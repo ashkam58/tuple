@@ -1,0 +1,6 @@
+{
+  "name": "LearnFun Teach — Python Tuples Interactive Comic Lesson",
+  "description": "A complete 60-minute interactive comic-themed Python Tuples lesson modeled after learnfun.in/teach, with live in-browser Python execution, memory boxes, Bolt the robot warm-up games, puzzle breaks, 3 self-checking class activities, quiz, worksheet generator, and teacher presentation mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

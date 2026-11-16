@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f6f1e8;
+  --paper-2: #ede4d3;
+  --ink: #1b1340;
+  --gold: #ffd23f;
+  --purple: #6c4de6;
+  --pink: #ec4899;
+  --mint: #e3f8ef;
+  --lavender: #f3efff;
+  --peach: #fff1d6;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  background-image: radial-gradient(circle, rgba(27, 19, 64, 0.08) 1.25px, transparent 1.75px);
+  background-size: 16px 16px;
+  color: var(--ink);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-comic {
+  font-family: 'Bangers', Impact, 'Arial Black', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.font-editorial {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.comic-title-shadow {
+  text-shadow: 3px 3px 0px #ffd23f, 5px 5px 0px #1b1340;
+}
+
+.comic-title-purple {
+  text-shadow: 3px 3px 0px #a78bfa;
+}
+
+.comic-title-gold {
+  text-shadow: 3px 3px 0px #ffd23f;
+}
+
+.comic-card {
+  border: 3px solid #1b1340;
+  border-radius: 24px;
+  background-color: #ffffff;
+  background-image: radial-gradient(circle, rgba(27, 19, 64, 0.045) 1.2px, transparent 1.7px);
+  background-size: 16px 16px;
+  box-shadow: 7px 7px 0px #1b1340;
+}
+
+.comic-card-sm {
+  border: 2.5px solid #1b1340;
+  border-radius: 16px;
+  box-shadow: 4px 4px 0px #1b1340;
+}
+
+.comic-btn {
+  border: 2.5px solid #1b1340;
+  box-shadow: 4px 4px 0px #1b1340;
+  transition: transform 120ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 120ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.comic-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #1b1340;
+}
+
+.comic-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #1b1340;
+}
+
+.comic-ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border: 2.5px solid #1b1340;
+  border-radius: 10px;
+  background: #ffd23f;
+  color: #1b1340;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0px #1b1340;
+  transform: rotate(-1deg);
+}
+
+.comic-ribbon-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border: 2.5px solid #1b1340;
+  border-radius: 10px;
+  background: #1b1340;
+  color: #ffd23f;
+  font-family: 'Bangers', Impact, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0px #6c4de6;
+  transform: rotate(-1deg);
+}
+
+.bw-mode {
+  filter: grayscale(100%) contrast(108%);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
